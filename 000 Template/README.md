@@ -1,6 +1,6 @@
 ## Coding Prompt #000 - [Give me a title]
 
-##### Pick a Difficulty Badge
+##### [Pick a Difficulty Badge]
 ![Easy](https://img.shields.io/badge/Difficulty-Easy-66ff00.svg)
 <br>
 ![Medium](https://img.shields.io/badge/Difficulty-Medium-ffff00.svg)
