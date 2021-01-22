@@ -14,16 +14,17 @@ def create_readme(item_dictionary):
     return readme, foldername
 
 
-parent_dir = '/Users/fishy/git/coding-prompts/projects'
+parent_dir = os.path.dirname(__file__)
+all_projects_dir = os.path.join(parent_dir, 'projects/')
 
 if __name__ == '__main__':
     project_list = []
-    with open("/Users/fishy/git/coding-prompts/TableOfContents.yml", 'r') as stream:
+    with open(os.path.join(parent_dir,"TableOfContents.yml"), 'r') as stream:
         thelist = yaml.safe_load(stream)
     for x in range(0, len(thelist)):
         item = thelist[x]['Project']
         readme, foldername = create_readme(item)
-        project_dir = os.path.join(parent_dir, foldername)
+        project_dir = os.path.join(all_projects_dir, foldername)
         try:
             os.mkdir(project_dir)
         except:
