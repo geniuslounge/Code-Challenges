@@ -2,5 +2,6 @@
  
 ### Difficulty: Medium
  
-Given a string, check to see if it's a palindrome.
+Given a list, check to see which are a palindrome.
+
 wordlist=["tacocat", "cheese", "racecar", "palindrome"]
