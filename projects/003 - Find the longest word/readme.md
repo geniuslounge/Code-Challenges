@@ -1,6 +1,6 @@
-#Coding Prompt 003 • Find the longest word
+# Coding Prompt 003 • Find the longest word
  
-###Difficulty: Easy
+### Difficulty: Easy
  
 Given a paragraph, write a function to find the longest word in the paragraph.
 

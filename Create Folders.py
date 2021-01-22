@@ -4,9 +4,9 @@ import os
 
 
 def create_readme(item_dictionary):
-    readme = "#Coding Prompt "
+    readme = "# Coding Prompt "
     readme = readme + str(item_dictionary['Number']) + ' • ' + item_dictionary['Title'] + '\n \n'
-    readme = readme + "###Difficulty: " + item_dictionary['Difficulty'] + '\n \n'
+    readme = readme + "### Difficulty: " + item_dictionary['Difficulty'] + '\n \n'
     readme = readme + item_dictionary['Description']
     foldername = str(item_dictionary['Number']) + ' - ' + item_dictionary['Title']
     # print(readme)

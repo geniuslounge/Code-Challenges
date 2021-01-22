@@ -1,6 +1,6 @@
-#Coding Prompt 002 • Fizz Buzz
+# Coding Prompt 002 • Fizz Buzz
  
-###Difficulty: Easy
+### Difficulty: Easy
  
 Write a function that when given a list:
   - if the number is divisible by 3, outputs the word "fizz"
