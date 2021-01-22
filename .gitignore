@@ -1,2 +1,4 @@
 
 *.pyc
+*.pyc
+__pycache__/Create Folders.cpython-38.pyc
