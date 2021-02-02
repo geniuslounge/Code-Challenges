@@ -16,7 +16,7 @@ def create_readme(item_dictionary):
 
 
 parent_dir = os.path.dirname(__file__)
-all_projects_dir = os.path.join(parent_dir, 'projects/')
+all_projects_dir = os.path.join(parent_dir, 'prompts/')
 
 if __name__ == '__main__':
     project_list = []
@@ -27,6 +27,7 @@ if __name__ == '__main__':
         readme, foldername = create_readme(item)
         project_dir = os.path.join(all_projects_dir, foldername)
         try:
+            os.mkdir(all_projects_dir)
             os.mkdir(project_dir)
         except:
             os.system("rm -Rf '%s'" % project_dir)
