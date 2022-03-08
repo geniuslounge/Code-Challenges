@@ -1,0 +1,72 @@
+# A List of projects to work through
+
+#This one is the template (Copy Below this Line) ⬇️
+- Project:
+    Number: "000"   # Be sure to add quotes here - otherwise ordering gets really messy
+    Title: Your project title goes here
+    Difficulty: Easy | Medium | Hard | FML
+    Description: Full instructions for the project should go here
+# Copy Above this line ⬆️
+
+- Project:
+    Number: "001"
+    Title: Fizz Buzz
+    Difficulty: Easy
+    Description: |
+      Write a function that when given a list:
+        - if the number is divisible by 3, outputs the word "fizz"
+        - if the number is divisible by 5, outputs the word "buzz"
+        - if the number is divisible by both 3 and 5, outputs "fizz buzz"
+        - if the number is not divisible by either 3 or 5, outputs the number
+
+- Project:
+    Number: "002"
+    Title: Find the longest word
+    Difficulty: Easy
+    Description: |
+      Given a paragraph, write a function to find the longest word in the paragraph.
+
+      paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui. Arcu felis bibendum ut tristique et. Vel turpis nunc eget lorem. Non nisi est sit amet facilisis magna. Sit amet consectetur adipiscing elit duis. Nulla pellentesque dignissim enim sit amet. Vitae et leo duis ut. Orci sagittis eu volutpat odio facilisis. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum sit amet justo donec enim diam."
+
+- Project:
+    Number: "003"
+    Title: High-Low Game
+    Difficulty: Medium
+    Description: |
+      Generate a random number
+
+      Have the user guess whether it is too high, too low, or the correct guess
+
+- Project:
+    Number: "004"
+    Title: Palindrome Checker
+    Difficulty: Medium
+    Description: |
+      Given a list, check to see which are a palindrome.
+
+      wordlist=['tacocat','cheese','racecar','palindrome','Anna','Civic','Kayak','Level','Madam','Mom','Noon','Racecar','Radar','Redder','Refer','turtle','cheesecake','farfignoogen','cheeseweasel','Repaper','Rotator','Rotor','Sagas','Solos','Stats','Tenet','Wow']
+
+- Project:
+    Number: "005"
+    Title: Find the Missing Number
+    Difficulty: Easy
+    Description: |
+      How do you find the missing number in a given integer array/list of 1 to 100?
+
+      Part 2 - Can you make it more efficient?
+
+- Project:
+    Number: "006"
+    Title: Find the Largest and Smallest Integers
+    Difficulty: Easy
+    Description: |
+      Given an unsorted list of integers, find the largest and smallest.
+
+- Project:
+    Number: "007"   # Be sure to add quotes here - otherwise ordering gets really messy
+    Title: OOber
+    Difficulty: Easy
+    Description:
+      Given a string, replace all vowels in the string with "oob"
+      Bonus points - Record yourself saying the string out loud without laughing.
+      thestring="The quick brown fox jumped over the lazy dogs"
