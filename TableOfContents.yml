@@ -1,72 +1,264 @@
-# A List of projects to work through
-
-#This one is the template (Copy Below this Line) ⬇️
+#- Project:
+#    Description: Full instructions for the project should go here
+#    Difficulty: Easy | Medium | Hard | FML
+#    Number: '000'
+#    Title: Your project title goes here
 - Project:
-    Number: "000"   # Be sure to add quotes here - otherwise ordering gets really messy
-    Title: Your project title goes here
-    Difficulty: Easy | Medium | Hard | FML
-    Description: Full instructions for the project should go here
-# Copy Above this line ⬆️
-
-- Project:
-    Number: "001"
+    Description: "Write a function that when given a list:\n  - if the number is divisible\
+      \ by 3, outputs the word \"fizz\"\n  - if the number is divisible by 5, outputs\
+      \ the word \"buzz\"\n  - if the number is divisible by both 3 and 5, outputs\
+      \ \"fizz buzz\"\n  - if the number is not divisible by either 3 or 5, outputs\
+      \ the number\n"
+    Difficulty: Easy
+    Number: '001'
     Title: Fizz Buzz
-    Difficulty: Easy
-    Description: |
-      Write a function that when given a list:
-        - if the number is divisible by 3, outputs the word "fizz"
-        - if the number is divisible by 5, outputs the word "buzz"
-        - if the number is divisible by both 3 and 5, outputs "fizz buzz"
-        - if the number is not divisible by either 3 or 5, outputs the number
-
 - Project:
-    Number: "002"
+    Description: 'Given a paragraph, write a function to find the longest word in
+      the paragraph.
+
+
+      paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec
+      dui. Arcu felis bibendum ut tristique et. Vel turpis nunc eget lorem. Non nisi
+      est sit amet facilisis magna. Sit amet consectetur adipiscing elit duis. Nulla
+      pellentesque dignissim enim sit amet. Vitae et leo duis ut. Orci sagittis eu
+      volutpat odio facilisis. Laoreet suspendisse interdum consectetur libero id
+      faucibus nisl tincidunt. Dictum sit amet justo donec enim diam."
+
+      '
+    Difficulty: Easy
+    Number: '002'
     Title: Find the longest word
-    Difficulty: Easy
-    Description: |
-      Given a paragraph, write a function to find the longest word in the paragraph.
-
-      paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui. Arcu felis bibendum ut tristique et. Vel turpis nunc eget lorem. Non nisi est sit amet facilisis magna. Sit amet consectetur adipiscing elit duis. Nulla pellentesque dignissim enim sit amet. Vitae et leo duis ut. Orci sagittis eu volutpat odio facilisis. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum sit amet justo donec enim diam."
-
 - Project:
-    Number: "003"
-    Title: High-Low Game
-    Difficulty: Medium
-    Description: |
-      Generate a random number
+    Description: 'Generate a random number
+
 
       Have the user guess whether it is too high, too low, or the correct guess
 
-- Project:
-    Number: "004"
-    Title: Palindrome Checker
+      '
     Difficulty: Medium
-    Description: |
-      Given a list, check to see which are a palindrome.
-
-      wordlist=['tacocat','cheese','racecar','palindrome','Anna','Civic','Kayak','Level','Madam','Mom','Noon','Racecar','Radar','Redder','Refer','turtle','cheesecake','farfignoogen','cheeseweasel','Repaper','Rotator','Rotor','Sagas','Solos','Stats','Tenet','Wow']
-
+    Number: '003'
+    Title: High-Low Game
 - Project:
-    Number: "005"
-    Title: Find the Missing Number
-    Difficulty: Easy
-    Description: |
-      How do you find the missing number in a given integer array/list of 1 to 100?
+    Description: 'Given a list of words, check to see which are a palindrome.
+
+
+    word_list = [
+        "Apple",
+        "Radar",
+        "Banana",
+        "Level",
+        "Chair",
+        "Elephant",
+        "Giraffe",
+        "Civic",
+        "Lion",
+        "Zebra",
+        "Noon",
+        "Ocean",
+        "Mountain",
+        "Racecar",
+        "River",
+        "Forest",
+        "Sky",
+        "Sunflower",
+        "Rose",
+        "Tulip",
+        "Daisy",
+        "Carrot",
+        "Potato",
+        "Tomato",
+        "Cucumber",
+        "Grapes",
+        "Lemon",
+        "Kayak",
+        "Pineapple",
+        "Kiwi",
+        "Mango",
+        "Strawberry",
+        "Blueberry",
+        "Raspberry",
+        "Cherry",
+        "Peach",
+        "Level",
+        "Avocado",
+        "Walnut",
+        "Almond",
+        "Pencil",
+        "Radar",
+        "Notebook",
+        "Backpack",
+        "Library",
+        "School",
+        "Teacher",
+        "Racecar",
+        "Classroom",
+        "Computer",
+        "Laptop",
+        "Mouse",
+        "Keyboard",
+        "Screen",
+        "Deified",
+        "Paper",
+        "Civic",
+        "Desk",
+        "Lamp",
+        "Clock",
+        "Watch",
+        "Calendar",
+        "Month",
+        "Year",
+        "Day",
+        "Night",
+        "Morning",
+        "Evening",
+        "Sunset",
+        "Sunrise",
+        "Moon",
+        "Star",
+        "Planet",
+        "Galaxy",
+        "Universe",
+        "Comet",
+        "Asteroid",
+        "Meteor",
+        "Noon",
+        "Cloud",
+        "Rain",
+        "Snow",
+        "Wind",
+        "Storm",
+        "Lightning",
+        "Thunder",
+        "Ice",
+        "Fire",
+        "Earthquake",
+        "Volcano",
+        "Island",
+        "Desert",
+        "Oasis",
+        "Jungle",
+        "Savannah",
+        "Marsh",
+        "Swamp",
+        "Pond",
+        "Lake",
+        "Racecar",
+        "Waterfall",
+        "Bridge",
+        "Road",
+        "Car",
+        "Bus",
+        "Train",
+        "Bicycle",
+        "Motorbike",
+        "Boat",
+        "Ship",
+        "Airplane",
+        "Airport",
+        "Pilot",
+        "Passenger",
+        "Ticket",
+        "Passport",
+        "Visa",
+        "Civic",
+        "Hotel",
+        "Room",
+        "Bed",
+        "Pillow",
+        "Blanket",
+        "Towel",
+        "Soap",
+        "Shampoo",
+        "Toothbrush",
+        "Toothpaste",
+        "Mirror",
+        "Comb",
+        "Hairbrush",
+        "Shower",
+        "Bath",
+        "Sink",
+        "Toilet",
+        "Kitchen",
+        "Stove",
+        "Oven",
+        "Microwave",
+        "Fridge",
+        "Freezer",
+        "Pantry",
+        "Plate",
+        "Bowl",
+        "Cup",
+        "Fork",
+        "Knife",
+        "Spoon",
+        "Napkin",
+        "Civic",
+        "Salt",
+        "Pepper",
+        "Sugar",
+        "Coffee",
+        "Tea",
+        "Juice",
+        "Water",
+        "Soda",
+        "Civic",
+        "Cookie",
+        "Cake",
+        "Pie",
+        "Ice Cream",
+        "Chocolate",
+        "Candy",
+        "Sandwich",
+        "Salad",
+        "Soup",
+        "Pizza",
+        "Pasta",
+        "Rice",
+        "Bread",
+        "Cheese",
+        "Egg",
+        "Chicken",
+        "Beef",
+        "Fish",
+        "Shrimp",
+        "Civic",
+        "Salad",
+        "Sandwich",
+        "Snack",
+        "Soup",
+        "Pizza",
+        "Pasta",
+        "Rice",
+        "Bread",
+        "Cheese",
+        "Civic",
+        "Egg",
+        "Chicken",
+        "Beef",
+        "Fish",
+        "Shrimp",
+        "Salad",
+        "Sandwich",
+        "Snack",
+        "Soup",
+        "Civic",
+        "Pizza"
+    ]
+
+      '
+    Difficulty: Medium
+    Number: '004'
+    Title: Palindrome Checker
+- Project:
+    Description: 'How do you find the missing number in a given integer array/list
+      of 1 to 100?
+
 
       Part 2 - Can you make it more efficient?
 
-- Project:
-    Number: "006"
-    Title: Find the Largest and Smallest Integers
+      '
     Difficulty: Easy
-    Description: |
-      Given an unsorted list of integers, find the largest and smallest.
+    Number: '005'
+    Title: Find the Missing Number
 
-- Project:
-    Number: "007"   # Be sure to add quotes here - otherwise ordering gets really messy
-    Title: OOber
-    Difficulty: Easy
-    Description:
-      Given a string, replace all vowels in the string with "oob"
-      Bonus points - Record yourself saying the string out loud without laughing.
-      thestring="The quick brown fox jumped over the lazy dogs"
