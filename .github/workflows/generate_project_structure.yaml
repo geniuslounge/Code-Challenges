@@ -23,7 +23,7 @@ jobs:
         pip install pyyaml
 
     - name: Run Script
-      run: python update_projects.py
+      run: python generate_project_structure.py
 
     - name: Create Zip Archive
       run: zip -r projects.zip projects
