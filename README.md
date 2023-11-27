@@ -10,7 +10,7 @@ There are two ways to get the prompts:
 ### Contributing to the project
 1. Fork the repo
 2. Create a branch
-3. Use the `new_project.py` file to create a new project prompt.(it will automatically ammend the Table of contents file)
+3. Use the `new_project.py` file to create a new project prompt.(it will automatically amend the Table of contents file)
 4. File a pull request and if approved / merged, your suggestion will appear in the list of challenges.
 
 
