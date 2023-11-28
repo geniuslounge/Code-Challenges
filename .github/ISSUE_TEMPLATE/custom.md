@@ -12,7 +12,7 @@ body:
   id: title_of_challenge
   attributes:
     label: "Title of Challenge"
-    description: "Succent title for the challenge"
+    description: "Succinct title for the challenge"
     placeholder: "Shuffle a deck of cards"
   validations:
     required: true
