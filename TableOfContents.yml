@@ -84,6 +84,7 @@
     Difficulty: Easy
     Number: '005'
     Title: Find the Missing Number
+
 - Project:
     Description: Given an unsorted list of integers, find the largest and smallest.
     Difficulty: Easy
