@@ -1,5 +1,10 @@
 import os
 import yaml
+import shutil
+
+# Remove the 'projects' folder if it exists and all its contents
+if os.path.exists('projects'):
+    shutil.rmtree('projects')
 
 # Assuming 'TableOfContents.yml' is in the root of the repository
 file_path = os.path.join(os.getcwd(), 'TableOfContents.yml')
@@ -13,6 +18,7 @@ if isinstance(projects, list):
         project = project_data.get('Project', {})
         project_number = project.get('Number')
         project_title = project.get('Title')
+        contributors = project.get('Contributors', [])
 
         # Skip projects without 'Number' or 'Title' keys
         if project_number is None or project_title is None:
@@ -24,9 +30,17 @@ if isinstance(projects, list):
 
         with open(f"{folder_name}/README.md", 'w') as readme_file:
             readme_file.write(
-                f"# {project_title} ({project_number})\n\nDifficulty: {project.get('Difficulty', 'Unknown')}\n\n{project.get('Description', 'No description provided')}")
+                f"# {project_title} ({project_number})\n\n"
+                f"Contributors: {', '.join(contributors) if contributors else 'None'}\n\n"
+                f"Difficulty: {project.get('Difficulty', 'Unknown')}\n\n{project.get('Description', 'No description provided')}")
 
         with open(f"{folder_name}/{project_number}_{project_title.replace(' ', '_')}.py", 'w') as code_file:
-            code_file.write("# Write your code here")
+            code_file.write(
+                f"# {project_title} ({project_number})\n"
+                f"# Contributors: {', '.join(contributors) if contributors else 'None'}\n"
+                f"# Difficulty: {project.get('Difficulty', 'Unknown')}\n"
+                "# Description: {project.get('Description', 'No description provided')}\n\n"
+                "# " + "\n# ".join(project.get('Description', 'No description provided').split('\n')))
+
 else:
     print("Invalid YAML file format. Please ensure that the 'Projects' key is present.")
