@@ -1,4 +1,5 @@
 - Project:
+    Contributor: Matt Troutman
     Description: "Write a function that when given a list:\n  - if the number is divisible\
       \ by 3, outputs the word \"fizz\"\n  - if the number is divisible by 5, outputs\
       \ the word \"buzz\"\n  - if the number is divisible by both 3 and 5, outputs\
@@ -8,6 +9,7 @@
     Number: '001'
     Title: Fizz Buzz
 - Project:
+    Contributor: Matt Troutman
     Description: 'Given a paragraph, write a function to find the longest word in
       the paragraph.
 
@@ -25,6 +27,7 @@
     Number: '002'
     Title: Find the longest word
 - Project:
+    Contributor: Matt Troutman
     Description: 'Generate a random number
 
 
@@ -35,6 +38,7 @@
     Number: '003'
     Title: High-Low Game
 - Project:
+    Contributor: Matt Troutman
     Description: 'Given a list of words, check to see which are a palindrome.
 
 
@@ -69,6 +73,7 @@
     Number: '004'
     Title: Palindrome Checker
 - Project:
+    Contributor: Matt Troutman
     Description: 'How do you find the missing number in a given integer array/list
       of 1 to 100?
 
@@ -80,7 +85,13 @@
     Number: '005'
     Title: Find the Missing Number
 - Project:
-    Description: 'Given an unsorted list of integers, find the largest and smallest.'
+    Description: Given an unsorted list of integers, find the largest and smallest.
     Difficulty: Easy
     Number: '006'
-    Title: 'Find the Largest and Smallest Integers'
+    Title: Find the Largest and Smallest Integers
+- Project:
+    Contributor: Matt
+    Description: create some shit
+    Difficulty: Hard
+    Number: '007'
+    Title: Test title

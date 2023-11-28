@@ -8,6 +8,7 @@ with open('TableOfContents.yml', 'r') as file:
 new_title = input("Enter the project title: ")
 new_difficulty = input("Enter the difficulty (Easy | Medium | Hard | FML): ")
 new_description = input("Enter the project description: ")
+new_contributor = input("Enter the project contributor: ")
 
 # Determine the new project number
 if existing_projects:
@@ -22,6 +23,7 @@ new_project = {
         'Number': new_project_number,
         'Title': new_title,
         'Difficulty': new_difficulty,
+        'Contributor': new_contributor,
         'Description': new_description
     }
 }
