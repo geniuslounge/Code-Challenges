@@ -14,7 +14,7 @@ assignees: 'trtmn'
 <!--- Describe your challenge in detail -->
 
 ## Difficulty
-<- Easy, Medium, Hard, FML ->
+<!--- Easy, Medium, Hard, FML --->
 
 ## Contributor
 <!-- Your GitHub username if you'd like to be credited-->
