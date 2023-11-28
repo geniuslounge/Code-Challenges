@@ -19,7 +19,7 @@ body:
 - type: textarea
   id: challenge_description
   attributes:
-    label: Challenge Description
+    label: "Challenge Description"
     description: "In more detail, give the instructions for the challenge here. Include demo data if needed"
     placeholder: "Create a deck of cards. Use classes, and methods that would commonly be used.
   validations:
