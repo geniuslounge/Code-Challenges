@@ -1,29 +1,41 @@
 ---
-name: Code Challenge Suggestion
+name: Code Challenge Submission
 about: Propose a new code challenge to us.
-title: 'Code Challenge Suggestion:'
+title: 'Code Challenge Submission:'
 labels: 'Suggestions'
 assignees: 'trtmn'
 body:
 - type: markdown
   attributes:
     value: "## Welcome!"
-- type: markdown
+- type: input
+  id: title_of_challenge
   attributes:
-    value: |
-      Thanks for taking the time to fill out this bug! If you need real-time help, join us on Discord.
+    label:Title of Challenge
+    description: "Succent title for the challenge"
+    placeholder: "Shuffle a deck of cards"
+  validations:
+    required: true
+- type: textarea
+  id: challenge_description
+  attributes:
+    label: Challenge Description
+    description: "In more detail, give the instructions for the challenge here. Include demo data if needed"
+    placeholder: "Create a deck of cards. Use classes, and methods that would commonly be used.
+  validations:
+    required: true
+- type: dropdown
+  id: difficulty
+  attributes:
+    label: Difficulty of Challenge
+    options:
+      - Easy
+      - Medium
+      - Hard
+      - FML
+  validations:
+    required: true
+  
+  
 
 ---
-
-## Title
-<!--- Title of your challenge -->
-
-## Description
-<!--- Describe your challenge in detail -->
-
-## Difficulty
-<!--- Easy, Medium, Hard, FML --->
-
-## Contributor
-<!-- Your GitHub username if you'd like to be credited-->
-
