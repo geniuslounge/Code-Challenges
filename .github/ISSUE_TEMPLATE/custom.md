@@ -1,4 +1,3 @@
----
 name: Code Challenge Submission
 about: Propose a new code challenge to us.
 title: 'Code Challenge Submission'
@@ -35,4 +34,3 @@ body:
         - FML
     validations:
       required: true
----
