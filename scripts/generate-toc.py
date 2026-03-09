@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerates the Prompts table in README.md from prompts/*.md frontmatter."""
+"""Generates per-difficulty pages and updates README.md links."""
 
 import re
 import sys
@@ -13,7 +13,7 @@ MARKER_START = "<!-- PROMPTS_START -->"
 MARKER_END = "<!-- PROMPTS_END -->"
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---", re.DOTALL)
 
-DIFFICULTY_ORDER = {"Easy": 0, "Medium": 1, "Hard": 2, "FML": 3}
+DIFFICULTIES = ["Easy", "Medium", "Hard", "FML"]
 
 
 def parse_frontmatter(text):
@@ -28,35 +28,54 @@ def parse_frontmatter(text):
     return data
 
 
-def build_table(prompts):
-    rows = ["| Title | Difficulty |", "|-------|------------|"]
-    for p in prompts:
-        link = f"[{p['title']}](prompts/{p['file']})"
-        rows.append(f"| {link} | {p['difficulty']} |")
-    return "\n".join(rows)
+def build_difficulty_page(difficulty, prompts):
+    lines = [f"# {difficulty} Prompts\n"]
+    if not prompts:
+        lines.append("_No prompts yet. Be the first to contribute one!_\n")
+    else:
+        for p in sorted(prompts, key=lambda p: p["title"].lower()):
+            lines.append(f"- [{p['title']}](prompts/{p['file']})")
+    return "\n".join(lines) + "\n"
+
+
+def build_readme_links(counts):
+    lines = []
+    for d in DIFFICULTIES:
+        count = counts.get(d, 0)
+        noun = "prompt" if count == 1 else "prompts"
+        lines.append(f"- [{d}]({d}.md) — {count} {noun}")
+    return "\n".join(lines)
 
 
 def main():
-    prompts = []
+    all_prompts = []
     for path in PROMPTS_DIR.glob("*.md"):
         fm = parse_frontmatter(path.read_text())
         if not fm.get("title"):
             continue
-        prompts.append({
+        all_prompts.append({
             "title": fm["title"],
             "difficulty": fm.get("difficulty", ""),
             "file": path.name,
         })
 
-    prompts.sort(key=lambda p: (
-        DIFFICULTY_ORDER.get(p["difficulty"], 99),
-        p["title"].lower(),
-    ))
+    by_difficulty = {d: [] for d in DIFFICULTIES}
+    for p in all_prompts:
+        if p["difficulty"] in by_difficulty:
+            by_difficulty[p["difficulty"]].append(p)
 
-    table = build_table(prompts)
+    # Write per-difficulty pages
+    for difficulty, prompts in by_difficulty.items():
+        page_path = REPO_ROOT / f"{difficulty}.md"
+        content = build_difficulty_page(difficulty, prompts)
+        page_path.write_text(content)
+        print(f"{difficulty}.md written ({len(prompts)} prompts).")
 
+    # Update README
+    counts = {d: len(p) for d, p in by_difficulty.items()}
+    links = build_readme_links(counts)
     readme = README.read_text()
-    new_section = f"{MARKER_START}\n{table}\n{MARKER_END}"
+    new_section = f"{MARKER_START}\n{links}\n{MARKER_END}"
 
     if MARKER_START in readme and MARKER_END in readme:
         updated = re.sub(
@@ -71,7 +90,7 @@ def main():
 
     if updated != readme:
         README.write_text(updated)
-        print(f"README.md updated with {len(prompts)} prompts.")
+        print("README.md updated.")
     else:
         print("README.md already up to date.")
 

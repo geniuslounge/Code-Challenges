@@ -7,14 +7,10 @@ A collection of coding challenges for interview prep and skill building. Each pr
 ## Prompts
 
 <!-- PROMPTS_START -->
-| Title | Difficulty |
-|-------|------------|
-| [Find the Largest and Smallest Integers](prompts/find-the-largest-and-smallest-integers.md) | Easy |
-| [Find the Longest Word](prompts/find-the-longest-word.md) | Easy |
-| [Find the Missing Number](prompts/find-the-missing-number.md) | Easy |
-| [Fizz Buzz](prompts/fizz-buzz.md) | Easy |
-| [High-Low Game](prompts/high-low-game.md) | Medium |
-| [Palindrome Checker](prompts/palindrome-checker.md) | Medium |
+- [Easy](Easy.md) — 4 prompts
+- [Medium](Medium.md) — 2 prompts
+- [Hard](Hard.md) — 0 prompts
+- [FML](FML.md) — 0 prompts
 <!-- PROMPTS_END -->
 
 ---
