@@ -7,10 +7,10 @@ A collection of coding challenges for interview prep and skill building. Each pr
 ## Prompts
 
 <!-- PROMPTS_START -->
-- [Easy](Easy.md) — 4 prompts
-- [Medium](Medium.md) — 2 prompts
-- [Hard](Hard.md) — 0 prompts
-- [FML](FML.md) — 0 prompts
+- [Easy](Easy.md) — 9 prompts
+- [Medium](Medium.md) — 8 prompts
+- [Hard](Hard.md) — 3 prompts
+- [FML](FML.md) — 1 prompt
 <!-- PROMPTS_END -->
 
 ---

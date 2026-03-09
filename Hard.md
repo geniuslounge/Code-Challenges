@@ -1,4 +1,5 @@
 # Hard Prompts
 
-_No prompts yet. Be the first to contribute one!_
-
+- [Autocomplete](prompts/autocomplete.md)
+- [Maze Solver](prompts/maze-solver.md)
+- [Sudoku Validator](prompts/sudoku-validator.md)
