@@ -1,0 +1,29 @@
+name: Update README Table of Contents
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "prompts/*.md"
+      - "scripts/generate-toc.py"
+
+jobs:
+  update-toc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerate README table
+        run: python scripts/generate-toc.py
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update prompt table of contents"
+          file_pattern: README.md

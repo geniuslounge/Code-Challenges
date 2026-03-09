@@ -1,14 +1,42 @@
-# coding-prompts
+# Genius Lounge Coding Prompts
 
-### This is a repository of coding prompts. The prompts might appear on an interview somewhere, or they could just be examples that help you hone your skills.
+A collection of coding challenges for interview prep and skill building. Each prompt is language-agnostic — solve them however you like.
 
-### Feel free to put in a pull-request to add to the list.
+---
 
+## Prompts
 
-If you'd like to contribute, please fork the repo, add a "project" entry to `TableOfContents.yml` (Project 000 is a template you can use). 
-Once you're finished, open a pull request, and you should see it merged in shortly there after! (Don't worry about running the `Create Folders.py` script for your PR)
+<!-- PROMPTS_START -->
+| Title | Difficulty |
+|-------|------------|
+| [Find the Largest and Smallest Integers](prompts/find-the-largest-and-smallest-integers.md) | Easy |
+| [Find the Longest Word](prompts/find-the-longest-word.md) | Easy |
+| [Find the Missing Number](prompts/find-the-missing-number.md) | Easy |
+| [Fizz Buzz](prompts/fizz-buzz.md) | Easy |
+| [High-Low Game](prompts/high-low-game.md) | Medium |
+| [Palindrome Checker](prompts/palindrome-checker.md) | Medium |
+<!-- PROMPTS_END -->
 
+---
 
+## Contributing
+
+1. Fork this repo.
+2. Create a new file in `prompts/` named `your-prompt-title.md` (e.g. `my-new-prompt.md`).
+3. Start the file with this frontmatter:
+
+```markdown
+---
+title: Your Prompt Title
+difficulty: Easy | Medium | Hard | FML
+---
+
+Your prompt description goes here.
+```
+
+4. Open a pull request. The README table updates automatically on merge.
+
+---
 
 Cheers,
 The Genius Lounge Team
