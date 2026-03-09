@@ -1,0 +1,25 @@
+name: Report a Problem
+description: Something wrong with an existing prompt or the repo itself
+labels: ["bug"]
+body:
+  - type: input
+    id: prompt
+    attributes:
+      label: Which prompt or file is affected?
+      placeholder: e.g. prompts/fizz-buzz.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's the problem?
+      description: Describe what's wrong — typo, unclear wording, broken link, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix (optional)
+      description: If you have a fix in mind, share it here.

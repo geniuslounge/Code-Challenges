@@ -1,0 +1,45 @@
+name: Suggest a Prompt
+description: Propose a new coding challenge to add to the repo
+labels: ["prompt suggestion"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Prompt Title
+      placeholder: e.g. Binary Search
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Easy
+        - Medium
+        - Hard
+        - FML
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the challenge. Include sample input/output if possible.
+      placeholder: |
+        Given a sorted list and a target value, find the index of the target...
+
+        binary_search([1, 3, 5, 7], 5)  →  2
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing prompts and this isn't already covered
+          required: true
+        - label: This prompt is language-agnostic
+          required: true
