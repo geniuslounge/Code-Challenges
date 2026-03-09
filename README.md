@@ -8,7 +8,7 @@ A collection of coding challenges for interview prep and skill building. Each pr
 
 <!-- PROMPTS_START -->
 - [Easy](Easy.md) — 9 prompts
-- [Medium](Medium.md) — 8 prompts
+- [Medium](Medium.md) — 9 prompts
 - [Hard](Hard.md) — 3 prompts
 - [FML](FML.md) — 1 prompt
 <!-- PROMPTS_END -->
